@@ -201,7 +201,7 @@ if(isset($_POST['submit'])){
 
 ?>
 
-<form action="http://localhost/studentadded.php" method="post">
+<form action="https://real-app33.herokuapp.com/studentadded.php" method="post">
     
     <b>Add a New Student</b>
     
