@@ -1,30 +1,36 @@
+<?php 
+/* Create database connection */
+	$connection = mysql_connect("mysql://sm1ys110p372t6my:xn32w9knjsvqrjxc@gmgcjwawatv599gq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/aobcpskiubl03ixi", "'aobcpskiubl03ixi'", "pw");
+	if (!$connection) {
+		die("Database connection failed: ");
+		}
+/* Select a database */
+	$db_select = mysql_select_db("szecetl_crimetest",$connection);
+	if (!$db_select) {
+		die("Database selection failed: ");
+		}
+?>
+	
 <?php
+/* Insert data from form submission */
+	
+	$fname=$_POST['firstname'];
+	$lname=$_POST['lastname'];
+	$state=$_POST['state'];
+	$date=$_POST['date'];
+	$crime=$_POST['crime'];
+	$verdict=$_POST['verdict'];
+	$sentence=$_POST['sentence'];
+	$sql="INSERT INTO crimeuserinput (firstname, lastname, state, date, crime, verdict, sentence)
+		VALUES ('".$fname."', '".$lname."', '".$state."', '".$date."', '".$crime."', '".$verdict."', '".$sentence."')";
+	mysql_query($sql) or die("Error: " . mysql_error());
+			echo "1 record added";
+		
+?>
 
-  $con = mysqli_connect('etdq12exrvdjisg6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', 'v5bpftsb6jsk1p3b', 'luwcm5lyt3wx22xf')
 
-  if(!$con)
-  {
-    echo 'Not Connected to Server';
-  }
-
-  if(!mysqli_select_db($con, 'tutorial'))
-  {
-    echo 'Database Not Selected';
-  }
-
-  $Name = $_POST['username'];
-  $Email = $_POST['email'];
-
-  $sql = "INSERT INTO person (Name,Email) VALUES ('$Name', '$Email')";
-
-  if (!mysqli_query($con, $sql))
-  {
-    echo 'Not Inserted';
-  }
-  else
-  {
-    echo "Inserted";
-  }
-
-  header("refresh:2; url=index.html");
+	
+<?php
+/* Close connection */
+	mysql_close($connection);
 ?>
