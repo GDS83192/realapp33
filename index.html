@@ -5,7 +5,17 @@
   <body>
 
     <p>First Site</p>
-	<img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/07/cool-hd-wallpapers.jpg">
+	<img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/07/cool-hd-wallpapers.jpg" height="42" width="42">
+
+	<canvas id="myCanvas"></canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 80, 80);
+</script>
+
     <form action="insert.php" method="post">
 
       Name : <input type="text" name="username">
