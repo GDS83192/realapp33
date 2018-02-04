@@ -11,3 +11,7 @@ function countDown() {
 
   document.getElementById("countDownButton").innerHTML = newVal;
 }
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
