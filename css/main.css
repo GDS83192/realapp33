@@ -8,6 +8,7 @@ body{
 
 #fundiv{
   background-color: gray;
+  display: block;
 }
 
 
