@@ -2,8 +2,13 @@
    Your custom CSS styles
    ========================================================================== */
 
+body{
+  background-color: lightblue;
+}
 
-
+.fundiv{
+  background-color: gray;
+}
 
 
 
