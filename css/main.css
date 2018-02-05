@@ -2,11 +2,11 @@
    Your custom CSS styles
    ========================================================================== */
 
-body{
+body {
   background-color: lightblue;
 }
 
-#fundiv{
+#fundiv {
   background-color: gray;
   display: block;
   height: 100px;
