@@ -7,7 +7,7 @@ body{
 }
 
 #fundiv{
-  color: gray;
+  background-color: gray;
   display: block;
   height: 100px;
   width:100px;
