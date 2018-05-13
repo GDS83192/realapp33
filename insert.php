@@ -1,6 +1,6 @@
 <?php
 
-  $con = mysqli_connect('gmgcjwawatv599gq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', 'sm1ys110p372t6my', 'xn32w9knjsvqrjxc');
+  $con = mysqli_connect('gmgcjwawatv599gq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', 'sm1ys110p372t6my', 'sxkp0mrrmptaqpb0');
 
   if(!$con)
   {
